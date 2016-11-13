@@ -184,6 +184,17 @@ http.createServer(function (req, res) {
 	res.writeHead(200, {'Content-Type': 'image/jpg'});
 	res.end(img, 'binary');
     }
+    
+    else if (req.url.indexOf('inclination') != -1) { 
+	    myDigitalAccelerometer.getRawValues(x, y, z);
+        
+        var xval = digitalAccelerometer.intp_value(x);
+        var yval = digitalAccelerometer.intp_value(y);
+        var zval = digitalAccelerometer.intp_value(z);
+        var gravity = readPotentio() > 500 ? 1.6 : 9.8;
+        
+        res.end('{ "x": ' + xval + ', "y": ' + yval + ', "z": ' + zval + ', "gravity": ' + gravity + ' }');
+    }
 
     else {
 	console.log("Incorrect page, url is  " + req.url);

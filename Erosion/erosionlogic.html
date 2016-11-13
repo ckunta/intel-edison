@@ -20,7 +20,7 @@ p.author {font: bold 10px arial, sans-serif; color: grey
 <!-- /canvas-->
 <h1>DIGITAL EROSION SIMULATION</h1>
 <h2>
-<p class="author">By Tangible STEM</p>
+<p class="author">By Foo Foo</p>
 	
 <p class="instruction">1) Please set the Flood Level</p>
 	<p class="setting">Your current setting is <span id="floodType"></span></p>
@@ -54,7 +54,7 @@ function updateStreamTable() {
 		document.getElementById("floodType").textContent = "No Flood";
 	    }
 	    
-  	    if (myArr.erosionLeivel > 3) {
+  	    if (myArr.erosionLevel > 3) {
 		document.getElementById("inclination").textContent = "Incline surface";
 	    } else {
 		document.getElementById("inclination").textContent = "Flat surface";

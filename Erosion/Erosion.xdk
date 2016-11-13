@@ -1,11 +1,11 @@
 {
   "project": {
-    "projectSettingsVersion": "2.0.0",
+    "projectSettingsVersion": "3.0.0",
     "creationData": {
       "projectTypeName": "com.intel.xdk.projecttype.iotapp",
       "src": "iotapp/iotapp-template-simple-web-server/sample.zip",
       "projectGuid": "721227fa-7d6f-4568-b365-ce2b9485def2",
-      "lastModifiedDate": 1461454646888,
+      "lastModifiedDate": 1479060765563,
       "creationDate": 1461454645787
     },
     "sourceDirectory": "",

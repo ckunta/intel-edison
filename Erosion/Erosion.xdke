@@ -1,6 +1,6 @@
 {
   "project": {
-    "projectSettingsVersion": "2.0.0",
+    "projectSettingsVersion": "3.0.0",
     "initialAutoPluginCount": 0,
     "currentBuildConfiguration": null,
     "projectFiles": {},
@@ -9,8 +9,8 @@
   "iot-tab": {
     "fileStatus": {
       "icon.png": {
-        "previousModTime": 1463208620169,
-        "modified": 1463208620169,
+        "previousModTime": 1479052124000,
+        "modified": 1479052124000,
         "seen": true,
         "name": "icon.png"
       },
@@ -21,20 +21,20 @@
         "name": "lightsensor.html"
       },
       "main.js": {
-        "previousModTime": 1478969798654,
-        "modified": 1478969798654,
+        "previousModTime": 1479065961000,
+        "modified": 1479065961000,
         "seen": true,
         "name": "main.js"
       },
       "package.json": {
-        "previousModTime": 1463209267066,
-        "modified": 1463209267066,
+        "previousModTime": 1479052124000,
+        "modified": 1479052124000,
         "seen": true,
         "name": "package.json"
       },
       "README.md": {
-        "previousModTime": 1463143218962,
-        "modified": 1463143218962,
+        "previousModTime": 1479052124000,
+        "modified": 1479052124000,
         "seen": true,
         "name": "README.md"
       },
@@ -69,8 +69,8 @@
         "name": "main.js~"
       },
       "code samples1.txt": {
-        "previousModTime": 1463143219222,
-        "modified": 1463143219222,
+        "previousModTime": 1479052124000,
+        "modified": 1479052124000,
         "seen": true,
         "name": "code samples1.txt"
       },
@@ -105,26 +105,26 @@
         "name": "NonInclineFloodSmall.jpg"
       },
       "Image1.jpg": {
-        "previousModTime": 1463251203545,
-        "modified": 1463251203545,
+        "previousModTime": 1479052124000,
+        "modified": 1479052124000,
         "seen": true,
         "name": "Image1.jpg"
       },
       "Image2.jpg": {
-        "previousModTime": 1463251203545,
-        "modified": 1463251203545,
+        "previousModTime": 1479052124000,
+        "modified": 1479052124000,
         "seen": true,
         "name": "Image2.jpg"
       },
       "Image3.jpg": {
-        "previousModTime": 1463251203545,
-        "modified": 1463251203545,
+        "previousModTime": 1479052124000,
+        "modified": 1479052124000,
         "seen": true,
         "name": "Image3.jpg"
       },
       "Image4.jpg": {
-        "previousModTime": 1463251203545,
-        "modified": 1463251203545,
+        "previousModTime": 1479052124000,
+        "modified": 1479052124000,
         "seen": true,
         "name": "Image4.jpg"
       },
@@ -135,20 +135,20 @@
         "name": "#code samples1.txt#"
       },
       "Image1b.jpg": {
-        "previousModTime": 1463251203545,
-        "modified": 1463251203545,
+        "previousModTime": 1479052124000,
+        "modified": 1479052124000,
         "seen": true,
         "name": "Image1b.jpg"
       },
       "teacher.html": {
-        "previousModTime": 1463208599473,
-        "modified": 1463208599473,
+        "previousModTime": 1479052124000,
+        "modified": 1479052124000,
         "seen": true,
         "name": "teacher.html"
       },
       "erosionlogic.html": {
-        "previousModTime": 1466793540872,
-        "modified": 1466793540872,
+        "previousModTime": 1479060996000,
+        "modified": 1479060996000,
         "seen": true,
         "name": "erosionlogic.html"
       },
@@ -159,14 +159,14 @@
         "name": "erosionlogic.html~"
       },
       "Erosion.xdk": {
-        "previousModTime": 1463208614293,
-        "modified": 1463208614293,
+        "previousModTime": 1479060766000,
+        "modified": 1479060766000,
         "seen": true,
         "name": "Erosion.xdk"
       },
       "Erosion.xdke": {
-        "previousModTime": 1478963310233,
-        "modified": 1478963310233,
+        "previousModTime": 1479065833000,
+        "modified": 1479065833000,
         "seen": true,
         "name": "Erosion.xdke"
       },
@@ -177,8 +177,8 @@
         "name": "movie.mp4"
       },
       "Erosion_xdke.kunta": {
-        "previousModTime": 1463207315691,
-        "modified": 1463207315691,
+        "previousModTime": 1479052124000,
+        "modified": 1479052124000,
         "seen": true,
         "name": "Erosion_xdke.kunta"
       },
@@ -211,6 +211,18 @@
         "modified": 1463245655282,
         "seen": true,
         "name": "InclineRainRocks.mp4"
+      },
+      "Erosion_2.0.0.xdk_bak": {
+        "previousModTime": 1479060764000,
+        "modified": 1479060764000,
+        "seen": true,
+        "name": "Erosion_2.0.0.xdk_bak"
+      },
+      "Erosion_2.0.0.xdke_bak": {
+        "previousModTime": 1479060765000,
+        "modified": 1479060765000,
+        "seen": true,
+        "name": "Erosion_2.0.0.xdke_bak"
       }
     },
     "boardFileStatus": {
@@ -295,7 +307,7 @@
       "main.js": {
         "name": "main.js",
         "modified": 1463022145000,
-        "previousModTime": 1478969802274,
+        "previousModTime": 1479065962757,
         "seen": true
       },
       "main.js~": {
@@ -323,5 +335,8 @@
         "seen": true
       }
     }
+  },
+  "editorTab": {
+    "currentEditorMode": 0
   }
 }
