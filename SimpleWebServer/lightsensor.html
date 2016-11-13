@@ -1,0 +1,84 @@
+<head>
+ <title>
+  Erosion Demo
+ </title>
+</head>
+<body>
+ <canvas id="lightLevel" width="0" height="0" style="border:1px solid #000000;">
+ </canvas>
+<h1>DIGITAL EROSION SIMULATION</h1>
+<h2>
+<p>By Tangible STEM</p>
+<p>Please set the Potentiometer for the Flood Level</p>
+<p>Please change the inclination</p>
+<p>Then hit the touch sensor to start the simulation</p>
+</h2>
+ <script>
+  var indent = 5; // center the display
+  var canvas = document.getElementById('lightLevel');
+  var context = canvas.getContext("2d");
+  function tickmark(value, offset) {
+    context.fillText(value, indent + value * 3 + 4* offset, 64);
+    context.fillRect(indent + value * 3, 50, 2, 5);
+  }
+  context.font = '10px courier';
+  var offset = 0;
+  tickmark(0, 0);
+  for (var i=20; i < 100; i += 20) {
+    tickmark(i, -1);
+  }
+  tickmark(100, -2);
+  context.fillRect(indent, 52, 300, 2);
+  context.font = '20px courier';
+  context.fillText('Lux', indent + 120, 80);
+  window.setInterval(updateLight, 1000);
+  function updateLight() {
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function() {
+      if (request.readyState == 4 && request.status == 200) {
+          var myArr = JSON.parse(request.responseText);
+//          context.fillStyle = '#ff0000';    // red
+//          context.fillRect(indent, 0, myArr.erosionLevel, 40);
+//          context.fillStyle = '#000000';    // black 
+//          context.fillRect(indent + myArr.lightLevel, 0, 300 - myArr.erosionLevel, 40);
+//          context.font = '13px courier';
+//          context.fillStyle = '#ffffff';  // white
+//          context.fillRect(20, 80, 299, 19);
+//          context.fillStyle = '#000000';    // black 
+//          context.fillText('Lux:' + myArr.lightLevel + ' value:' + myArr.rawValue, 20, 99);
+//          floodLevel
+
+          if (myArr.touchSensor == 1) {
+             if (myArr.erosionLevel > 3) {
+                if (myArr.floodLevel > 500) {
+                     document.write("<H1>Flood - Incline</H1>");
+
+                     document.write("<img src='Image1.jpg' alt='Flood - Incline'>");
+                     document.close();
+                } else {
+                     document.write("<H1>No Flood - Incline</H1>");
+
+                     document.write("<img src='Image2.jpg' alt='No Flood - Incline'>");
+                     document.close();
+                }
+             } else {
+                if (myArr.floodLevel > 500) {
+                     document.write("<H1>Flood - No Incline</H1>");
+                     document.write("<img src='Image4.jpg' alt='Flood - Non Incline'>");
+                     document.close();
+                } else {
+                     document.write("<H1>No Flood - No Incline</H1>");
+
+                     document.write("<img src='Image3.jpg' alt='No Flood - Non Incline'>");
+                    document.close();
+                }
+
+             }
+          }
+      }
+    };
+    request.open('GET', 'http://<<ipAddress>>:1337/data', true);
+    request.send();
+  }
+ </script>
+</body>

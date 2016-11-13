@@ -1,0 +1,195 @@
+
+Push button on D2
+***************************end button on D2
+
+**********************  accelerometer I code on I2C buss 
+
+/*jslint node:true, vars:true, bitwise:true, unparam:true */
+/*jshint unused:true */
+// Leave the above lines for propper jshinting
+//Type Node.js Here :)
+// Load Grove module
+var groveSensor = require('jsupm_grove');
+
+// Create the button object using GPIO pin 0
+var button = new groveSensor.GroveButton(2);
+
+// Read the input and print, waiting one second between readings
+function readButtonValue() {
+    console.log(button.name() + " value is " + button.value());
+}
+setInterval(readButtonValue, 1000);
+
+************************end button
+*******************start read  pot on Analog 0
+
+/*jslint node:true, vars:true, bitwise:true, unparam:true */
+/*jshint unused:true */
+
+/*
+A simple node.js application intended to read data from Analog pins on the Intel based development boards such as the Intel(R) Galileo and Edison with Arduino breakout board.
+
+MRAA - Low Level Skeleton Library for Communication on GNU/Linux platforms
+Library in C/C++ to interface with Galileo & other Intel platforms, in a structured and sane API with port nanmes/numbering that match boards & with bindings to javascript & python.
+
+Steps for installing MRAA & UPM Library on Intel IoT Platform with IoTDevKit Linux* image
+Using a ssh client: 
+1. echo "src maa-upm http://iotdk.intel.com/repos/1.1/intelgalactic" > /etc/opkg/intel-iotdk.conf
+2. opkg update
+3. opkg upgrade
+
+Article: https://software.intel.com/en-us/html5/articles/intel-xdk-iot-edition-nodejs-templates
+*/
+
+var mraa = require('mraa'); //require mraa
+console.log('MRAA Version: ' + mraa.getVersion()); //write the mraa version to the console
+
+var analogPin0 = new mraa.Aio(0); //setup access analog input Analog pin #0 (A0)
+var analogValue = analogPin0.read(); //read the value of the analog pin
+console.log(analogValue); //write the value of the analog pin to the console
+
+****************************************************endA0 read POT
+
+
+*****************Accelerometer on I2C buss
+/*jslint node:true, vars:true, bitwise:true, unparam:true */
+/*jshint unused:true */
+// Leave the above lines for propper jshinting
+//Type Node.js Here :)/*jslint node:true, vars:true, bitwise:true, unparam:true */
+/*jshint unused:true */
+
+/*
+* Author: Zion Orent 
+* Copyright (c) 2015 Intel Corporation.
+*
+* Permission is hereby granted, free of charge, to any person obtaining
+* a copy of this software and associated documentation files (the
+* "Software"), to deal in the Software without restriction, including
+* without limitation the rights to use, copy, modify, merge, publish,
+* distribute, sublicense, and/or sell copies of the Software, and to
+* permit persons to whom the Software is furnished to do so, subject to
+* the following conditions:
+*
+* The above copyright notice and this permission notice shall be
+* included in all copies or substantial portions of the Software.
+*
+* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+* EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+* MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+* NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+* LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+* OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+* WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+
+var digitalAccelerometer = require('jsupm_mma7660');
+
+// Instantiate an MMA7660 on I2C bus 0
+var myDigitalAccelerometer = new digitalAccelerometer.MMA7660(
+					digitalAccelerometer.MMA7660_I2C_BUS, 
+					digitalAccelerometer.MMA7660_DEFAULT_I2C_ADDR);
+
+// place device in standby mode so we can write registers
+myDigitalAccelerometer.setModeStandby();
+
+// enable 64 samples per second
+myDigitalAccelerometer.setSampleRate(digitalAccelerometer.MMA7660.AUTOSLEEP_64);
+
+// place device into active mode
+myDigitalAccelerometer.setModeActive();
+
+var x, y, z;
+x = digitalAccelerometer.new_intp();
+y = digitalAccelerometer.new_intp();
+z = digitalAccelerometer.new_intp();
+
+var ax, ay, az;
+ax = digitalAccelerometer.new_floatp();
+ay = digitalAccelerometer.new_floatp();
+az = digitalAccelerometer.new_floatp();
+
+var outputStr;
+
+var myInterval = setInterval(function()
+{
+	myDigitalAccelerometer.getRawValues(x, y, z);
+	outputStr = "Raw values: x = " + digitalAccelerometer.intp_value(x);
+	console.log(outputStr);
+
+	
+}, 500);
+
+// round off output to match C example, which has 6 decimal places
+function roundNum(num, decimalPlaces)
+{
+	var extraNum = (1 / (Math.pow(10, decimalPlaces) * 1000));
+	return (Math.round((num + extraNum) 
+		* (Math.pow(10, decimalPlaces))) / Math.pow(10, decimalPlaces));
+}
+
+// When exiting: clear interval and print message
+process.on('SIGINT', function()
+{
+	clearInterval(myInterval);
+
+	// clean up memory
+	digitalAccelerometer.delete_intp(x);
+	
+
+	digitalAccelerometer.delete_floatp(ax);
+	
+	myDigitalAccelerometer.setModeStandby();
+
+	console.log("Exiting...");
+	process.exit(0);
+});
+hen exiting: clear interval and print message
+process.on('SIGINT', function()
+{
+	clearInterval(myInterval);
+
+	// clean up memory
+	digitalAccelerometer.delete_intp(x);
+	
+
+	digitalAccelerometer.delete_floatp(ax);
+	
+	myDigitalAccelerometer.setModeStandby();
+
+	console.log("Exiting...");
+	process.exit(0);
+});
+talAccelerometer.delete_intp(z);
+
+	digitalAccelerometer.delete_floatp(ax);
+	digitalAccelerometer.delete_floatp(ay);
+	digitalAccelerometer.delete_floatp(az);
+
+	myDigitalAccelerometer.setModeStandby();
+
+	console.log("Exiting...");
+	process.exit(0);
+});
+
+
+***********************accelerometer on I2c buss END
+
+************************* touch sensor on  D4
+
+// Load TTP223 touch sensor module
+var sensorModule = require('jsupm_ttp223');
+
+// Create the TTP223 touch sensor object using GPIO pin 4
+var touch = new sensorModule.TTP223(4);
+
+// Check whether or not a finger is near the touch sensor and
+// print accordingly, waiting one second between readings
+function readSensorValue() {
+    if ( touch.isPressed() ) {
+        console.log(touch.name() + " is pressed");
+    } else {
+        console.log(touch.name() + " is not pressed");
+    }
+}
+setInterval(readSensorValue, 1000);
+******************end touch sensor on  D4

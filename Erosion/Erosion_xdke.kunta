@@ -1,0 +1,315 @@
+{
+  "project": {
+    "projectSettingsVersion": "2.0.0",
+    "initialAutoPluginCount": 0,
+    "currentBuildConfiguration": null,
+    "projectFiles": {},
+    "projectDirectories": {}
+  },
+  "iot-tab": {
+    "fileStatus": {
+      "icon.png": {
+        "previousModTime": 1463143220170,
+        "modified": 1463143220170,
+        "seen": true,
+        "name": "icon.png"
+      },
+      "lightsensor.html": {
+        "previousModTime": 1462033531077,
+        "modified": 1462033531077,
+        "seen": true,
+        "name": "lightsensor.html"
+      },
+      "main.js": {
+        "previousModTime": 1463199939105,
+        "modified": 1463199939105,
+        "seen": true,
+        "name": "main.js"
+      },
+      "package.json": {
+        "previousModTime": 1463143289895,
+        "modified": 1463143289895,
+        "seen": true,
+        "name": "package.json"
+      },
+      "README.md": {
+        "previousModTime": 1463143218962,
+        "modified": 1463143218962,
+        "seen": true,
+        "name": "README.md"
+      },
+      "SimpleWebServer.xdk": {
+        "previousModTime": 1461454646983,
+        "modified": 1461454646983,
+        "seen": true,
+        "name": "SimpleWebServer.xdk"
+      },
+      "SimpleWebServer.xdke": {
+        "previousModTime": 1462810119593,
+        "modified": 1462810119593,
+        "seen": true,
+        "name": "SimpleWebServer.xdke"
+      },
+      "xdk/project-info.json": {
+        "previousModTime": 1461454646851,
+        "modified": 1461454646851,
+        "seen": true,
+        "name": "xdk/project-info.json"
+      },
+      "lightsensor.html~": {
+        "previousModTime": 1462000137710,
+        "modified": 1462000137710,
+        "seen": true,
+        "name": "lightsensor.html~"
+      },
+      "main.js~": {
+        "previousModTime": 1463143220494,
+        "modified": 1463143220494,
+        "seen": true,
+        "name": "main.js~"
+      },
+      "code samples1.txt": {
+        "previousModTime": 1463143219222,
+        "modified": 1463143219222,
+        "seen": true,
+        "name": "code samples1.txt"
+      },
+      "FloodIncline.PNG": {
+        "previousModTime": 1461987065230,
+        "modified": 1461987065230,
+        "seen": true,
+        "name": "FloodIncline.PNG"
+      },
+      "FloodInclineSmall.jpg": {
+        "previousModTime": 1461995793101,
+        "modified": 1461995793101,
+        "seen": true,
+        "name": "FloodInclineSmall.jpg"
+      },
+      "InclineStandardNoFloodSmall.jpg": {
+        "previousModTime": 1461995793153,
+        "modified": 1461995793153,
+        "seen": true,
+        "name": "InclineStandardNoFloodSmall.jpg"
+      },
+      "NonFloodNonInclineSmall.jpg": {
+        "previousModTime": 1461995793221,
+        "modified": 1461995793221,
+        "seen": true,
+        "name": "NonFloodNonInclineSmall.jpg"
+      },
+      "NonInclineFloodSmall.jpg": {
+        "previousModTime": 1461995793293,
+        "modified": 1461995793293,
+        "seen": true,
+        "name": "NonInclineFloodSmall.jpg"
+      },
+      "Image1.jpg": {
+        "previousModTime": 1463143214110,
+        "modified": 1463143214110,
+        "seen": true,
+        "name": "Image1.jpg"
+      },
+      "Image2.jpg": {
+        "previousModTime": 1463143216282,
+        "modified": 1463143216282,
+        "seen": true,
+        "name": "Image2.jpg"
+      },
+      "Image3.jpg": {
+        "previousModTime": 1463143217154,
+        "modified": 1463143217154,
+        "seen": true,
+        "name": "Image3.jpg"
+      },
+      "Image4.jpg": {
+        "previousModTime": 1463143218494,
+        "modified": 1463143218494,
+        "seen": true,
+        "name": "Image4.jpg"
+      },
+      "#code samples1.txt#": {
+        "previousModTime": 1463143212958,
+        "modified": 1463143212958,
+        "seen": true,
+        "name": "#code samples1.txt#"
+      },
+      "Image1b.jpg": {
+        "previousModTime": 1463143215574,
+        "modified": 1463143215574,
+        "seen": true,
+        "name": "Image1b.jpg"
+      },
+      "teacher.html": {
+        "previousModTime": 1463143290263,
+        "modified": 1463143290263,
+        "seen": true,
+        "name": "teacher.html"
+      },
+      "erosionlogic.html": {
+        "previousModTime": 1463206694976,
+        "modified": 1463206694976,
+        "seen": true,
+        "name": "erosionlogic.html"
+      },
+      "erosionlogic.html~": {
+        "previousModTime": 1463205775879,
+        "modified": 1463205775879,
+        "seen": true,
+        "name": "erosionlogic.html~"
+      },
+      "Erosion.xdk": {
+        "previousModTime": 1462997076580,
+        "modified": 1462997076580,
+        "seen": true,
+        "name": "Erosion.xdk"
+      },
+      "Erosion.xdke": {
+        "previousModTime": 1463206731572,
+        "modified": 1463206731572,
+        "seen": true,
+        "name": "Erosion.xdke"
+      },
+      "movie.mp4": {
+        "previousModTime": 1463198568000,
+        "modified": 1463198568000,
+        "seen": true,
+        "name": "movie.mp4"
+      }
+    },
+    "boardFileStatus": {
+      "#code samples1.txt#": {
+        "name": "#code samples1.txt#",
+        "modified": 1463004515000,
+        "previousModTime": 1463207040238,
+        "seen": true
+      },
+      "Erosion.xdk": {
+        "name": "Erosion.xdk",
+        "modified": 1463004958000,
+        "previousModTime": 1463004958000,
+        "seen": true
+      },
+      "Erosion.xdke": {
+        "name": "Erosion.xdke",
+        "modified": 1463004958000,
+        "previousModTime": 1463004958000,
+        "seen": true
+      },
+      "Image1.jpg": {
+        "name": "Image1.jpg",
+        "modified": 1463004514000,
+        "previousModTime": 1463207040238,
+        "seen": true
+      },
+      "Image1b.jpg": {
+        "name": "Image1b.jpg",
+        "modified": 1463004515000,
+        "previousModTime": 1463207040238,
+        "seen": true
+      },
+      "Image2.jpg": {
+        "name": "Image2.jpg",
+        "modified": 1463004514000,
+        "previousModTime": 1463207040238,
+        "seen": true
+      },
+      "Image3.jpg": {
+        "name": "Image3.jpg",
+        "modified": 1463004515000,
+        "previousModTime": 1463207040238,
+        "seen": true
+      },
+      "Image4.jpg": {
+        "name": "Image4.jpg",
+        "modified": 1463004515000,
+        "previousModTime": 1463207040238,
+        "seen": true
+      },
+      "README.md": {
+        "name": "README.md",
+        "modified": 1463004514000,
+        "previousModTime": 1463207040238,
+        "seen": true
+      },
+      "code samples1.txt": {
+        "name": "code samples1.txt",
+        "modified": 1463004514000,
+        "previousModTime": 1463207040238,
+        "seen": true
+      },
+      "erosionlogic.html": {
+        "name": "erosionlogic.html",
+        "modified": 1463022145000,
+        "previousModTime": 1463207040238,
+        "seen": true
+      },
+      "erosionlogic.html~": {
+        "name": "erosionlogic.html~",
+        "modified": 1463004515000,
+        "previousModTime": 1463207040238,
+        "seen": true
+      },
+      "icon.png": {
+        "name": "icon.png",
+        "modified": 1463004514000,
+        "previousModTime": 1463207040238,
+        "seen": true
+      },
+      "main.js": {
+        "name": "main.js",
+        "modified": 1463022145000,
+        "previousModTime": 1463207040238,
+        "seen": true
+      },
+      "main.js~": {
+        "name": "main.js~",
+        "modified": 1463004514000,
+        "previousModTime": 1463207040238,
+        "seen": true
+      },
+      "movie.mp4": {
+        "name": "movie.mp4",
+        "modified": 1463019892000,
+        "previousModTime": 1463207040238,
+        "seen": true
+      },
+      "package.json": {
+        "name": "package.json",
+        "modified": 1463004514000,
+        "previousModTime": 1463207040238,
+        "seen": true
+      },
+      "teacher.html": {
+        "name": "teacher.html",
+        "modified": 1463004515000,
+        "previousModTime": 1463207040238,
+        "seen": true
+      },
+      "lightsensor.html": {
+        "previousModTime": 1463207040238
+      },
+      "xdk/project-info.json": {
+        "previousModTime": 1463207040238
+      },
+      "lightsensor.html~": {
+        "previousModTime": 1463207040238
+      },
+      "FloodIncline.PNG": {
+        "previousModTime": 1463207040238
+      },
+      "FloodInclineSmall.jpg": {
+        "previousModTime": 1463207040238
+      },
+      "InclineStandardNoFloodSmall.jpg": {
+        "previousModTime": 1463207040238
+      },
+      "NonFloodNonInclineSmall.jpg": {
+        "previousModTime": 1463207040238
+      },
+      "NonInclineFloodSmall.jpg": {
+        "previousModTime": 1463207040238
+      }
+    }
+  }
+}

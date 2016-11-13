@@ -1,0 +1,156 @@
+{
+  "project": {
+    "projectSettingsVersion": "2.0.0",
+    "initialAutoPluginCount": 0,
+    "currentBuildConfiguration": null,
+    "projectFiles": {},
+    "projectDirectories": {}
+  },
+  "iot-tab": {
+    "fileStatus": {
+      "icon.png": {
+        "previousModTime": 1461454645523,
+        "modified": 1461454645523,
+        "seen": true,
+        "name": "icon.png"
+      },
+      "lightsensor.html": {
+        "previousModTime": 1462033531077,
+        "modified": 1462033531077,
+        "seen": true,
+        "name": "lightsensor.html"
+      },
+      "main.js": {
+        "previousModTime": 1462810910609,
+        "modified": 1462810910609,
+        "seen": true,
+        "name": "main.js"
+      },
+      "package.json": {
+        "previousModTime": 1461454645523,
+        "modified": 1461454645523,
+        "seen": true,
+        "name": "package.json"
+      },
+      "README.md": {
+        "previousModTime": 1461454645523,
+        "modified": 1461454645523,
+        "seen": true,
+        "name": "README.md"
+      },
+      "SimpleWebServer.xdk": {
+        "previousModTime": 1461454646983,
+        "modified": 1461454646983,
+        "seen": true,
+        "name": "SimpleWebServer.xdk"
+      },
+      "SimpleWebServer.xdke": {
+        "previousModTime": 1462810119593,
+        "modified": 1462810119593,
+        "seen": true,
+        "name": "SimpleWebServer.xdke"
+      },
+      "xdk/project-info.json": {
+        "previousModTime": 1461454646851,
+        "modified": 1461454646851,
+        "seen": true,
+        "name": "xdk/project-info.json"
+      },
+      "lightsensor.html~": {
+        "previousModTime": 1462000137710,
+        "modified": 1462000137710,
+        "seen": true,
+        "name": "lightsensor.html~"
+      },
+      "main.js~": {
+        "previousModTime": 1462548353790,
+        "modified": 1462548353790,
+        "seen": true,
+        "name": "main.js~"
+      },
+      "code samples1.txt": {
+        "previousModTime": 1461524158000,
+        "modified": 1461524158000,
+        "seen": true,
+        "name": "code samples1.txt"
+      },
+      "FloodIncline.PNG": {
+        "previousModTime": 1461987065230,
+        "modified": 1461987065230,
+        "seen": true,
+        "name": "FloodIncline.PNG"
+      },
+      "FloodInclineSmall.jpg": {
+        "previousModTime": 1461995793101,
+        "modified": 1461995793101,
+        "seen": true,
+        "name": "FloodInclineSmall.jpg"
+      },
+      "InclineStandardNoFloodSmall.jpg": {
+        "previousModTime": 1461995793153,
+        "modified": 1461995793153,
+        "seen": true,
+        "name": "InclineStandardNoFloodSmall.jpg"
+      },
+      "NonFloodNonInclineSmall.jpg": {
+        "previousModTime": 1461995793221,
+        "modified": 1461995793221,
+        "seen": true,
+        "name": "NonFloodNonInclineSmall.jpg"
+      },
+      "NonInclineFloodSmall.jpg": {
+        "previousModTime": 1461995793293,
+        "modified": 1461995793293,
+        "seen": true,
+        "name": "NonInclineFloodSmall.jpg"
+      },
+      "Image1.jpg": {
+        "previousModTime": 1462807942441,
+        "modified": 1462807942441,
+        "seen": true,
+        "name": "Image1.jpg"
+      },
+      "Image2.jpg": {
+        "previousModTime": 1462807652294,
+        "modified": 1462807652294,
+        "seen": true,
+        "name": "Image2.jpg"
+      },
+      "Image3.jpg": {
+        "previousModTime": 1462807689958,
+        "modified": 1462807689958,
+        "seen": true,
+        "name": "Image3.jpg"
+      },
+      "Image4.jpg": {
+        "previousModTime": 1462809061944,
+        "modified": 1462809061944,
+        "seen": true,
+        "name": "Image4.jpg"
+      },
+      "#code samples1.txt#": {
+        "previousModTime": 1462805497334,
+        "modified": 1462805497334,
+        "seen": true,
+        "name": "#code samples1.txt#"
+      },
+      "Image1b.jpg": {
+        "previousModTime": 1462807575737,
+        "modified": 1462807575737,
+        "seen": true,
+        "name": "Image1b.jpg"
+      },
+      "teacher.html": {
+        "previousModTime": 1462551636000,
+        "modified": 1462551636000,
+        "seen": true,
+        "name": "teacher.html"
+      }
+    },
+    "boardFileStatus": {
+      "main.js": {
+        "previousModTime": 1462810915114
+      }
+    }
+  }
+}

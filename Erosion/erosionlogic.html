@@ -1,0 +1,129 @@
+<head>
+ <title>
+  Erosion Demo
+ </title>
+<style>
+p.title {font: bold 20px arial, sans-serif; color: chocolate
+}
+p.instruction {font: bold 20px arial, sans-serif; color: green
+}
+p.setting {font: bold 18px arial, sans-serif; color: blue
+}
+p.author {font: bold 10px arial, sans-serif; color: grey
+}
+
+</style>
+</head>
+<body>
+ 
+<!-- canvas id="lightLevel" width="0" height="0" style="border:1px solid #000000;" -->
+<!-- /canvas-->
+<h1>DIGITAL EROSION SIMULATION</h1>
+<h2>
+<p class="author">By Tangible STEM</p>
+	
+<p class="instruction">1) Please set the Flood Level</p>
+	<p class="setting">Your current setting is <span id="floodType"></span></p>
+	
+<p class="instruction">2) Please change the inclination</p>
+	<p class="setting">Your current setting is <span id="inclination"></span></p>
+<p class="instruction">3) What kind of erosion substrate you are going to use</p>
+	<p class="setting">Substrate type is <span id="substrate"></span></p>
+<p class="instruction">4) Then hit the touch sensor to start the simulation</p>
+<p id="displayvideo"></p>	
+</h2>
+    <script>
+
+window.setInterval(updateStreamTable, 1000);
+function updateStreamTable() {
+    var request = new XMLHttpRequest();
+    var substrateType = 0;
+    request.onreadystatechange = function() {
+	if (request.readyState == 4 && request.status == 200) {
+            var myArr = JSON.parse(request.responseText);
+
+	    if (myArr.erosionSubstrate == 1) {
+		document.getElementById("substrate").textContent = "Rock";
+	    } else {
+		document.getElementById("substrate").textContent = "Sand";
+	    }
+
+  	    if (myArr.floodLevel > 500) {
+		document.getElementById("floodType").textContent = "Flood";
+	    } else {
+		document.getElementById("floodType").textContent = "No Flood";
+	    }
+	    
+  	    if (myArr.erosionLeivel > 3) {
+		document.getElementById("inclination").textContent = "Incline surface";
+	    } else {
+		document.getElementById("inclination").textContent = "Flat surface";
+	    }
+
+	    
+            if (myArr.touchSensor == 1) {
+		//document.write("sensor is touched");
+		
+		if (myArr.erosionSubstrate == 0) {
+			<!-- sand type -->
+			if (myArr.erosionLevel > 3) {
+                	    if (myArr.floodLevel > 500) {
+				document.getElementById("displayvideo").innerHTML = "<p class='title'>Showing erosion in Flood situation with Incline surface</p>" +
+"<iframe width='560' height='315' src='https://www.youtube.com/embed/c7atvP4sxbw?autoplay=1' frameborder='0' allowfullscreen></iframe>";
+//"<img width='560' height='315' src='Image1.jpg' alt='Flood - Incline'>";
+                	    } else {
+				document.getElementById("displayvideo").innerHTML = "<p class='title'>Showing erosion in No Flood situation with Incline surface</p>" +
+"<iframe width='560' height='315' src='https://www.youtube.com/embed/RjITV4F94zY?autoplay=1' frameborder='0' allowfullscreen></iframe>";
+//"<img width='560' height='315' src='Image2.jpg' alt='No Flood - Incline'>";
+                	    }
+             		} else {
+                	    if (myArr.floodLevel > 500) {
+				document.getElementById("displayvideo").innerHTML = "<p class='title'>Showing erosion in Flood situation with Flat surface</p>" +
+//"<img width='560' height='315' src='Image4.jpg' alt='Flood - Non Incline'>";
+"<iframe width='560' height='315' src='https://www.youtube.com/embed/1FqC1KXM8SU?autoplay=1' frameborder='0' allowfullscreen></iframe>";
+
+                	    } else {
+				document.getElementById("displayvideo").innerHTML = "<p class='title'>Showing erosion in No Flood situation with Flat surface</p>" +
+//"<img width='560' height='315' src='Image3.jpg' alt='No Flood - Non Incline'>";
+"<iframe width='560' height='315' src='https://www.youtube.com/embed/RDj4lnWPMKY?autoplay=1' frameborder='0' allowfullscreen></iframe>";
+
+                	    }
+			}
+		} else {
+			<!-- rock type -->
+			if (myArr.erosionLevel > 3) {
+                	    if (myArr.floodLevel > 500) {
+				document.getElementById("displayvideo").innerHTML = "<p class='title'>Showing erosion in Flood situation with Incline surface</p>" +
+//"<video width='560' height='315' controls autoplay><source src='inclinefloodrocks.mp4' type='video/mp4'></video>";
+"<iframe width='560' height='315' src='https://www.youtube.com/embed/IY59i1swyj8?autoplay=1' frameborder='0' allowfullscreen></iframe>";
+
+
+                	    } else {
+				document.getElementById("displayvideo").innerHTML = "<p class='title'>Showing erosion in No Flood situation with Incline surface</p>" +
+//"<video width='560' height='315' controls autoplay><source src='inclinerainrocks.mp4' type='video/mp4'></video>";
+"<iframe width='560' height='315' src='https://www.youtube.com/embed/aedowr_OuCE?autoplay=1' frameborder='0' allowfullscreen></iframe>";
+
+                	    }
+             		} else {
+                	    if (myArr.floodLevel > 500) {
+				document.getElementById("displayvideo").innerHTML = "<p class='title'>Showing erosion in Flood situation with Flat surface</p>" +
+//"<video width='560' height='315' controls autoplay><source src='flatfloodrocks.mp4' type='video/mp4'></video>";
+"<iframe width='560' height='315' src='https://www.youtube.com/embed/V0dhx_IOTPo?autoplay=1' frameborder='0' allowfullscreen></iframe>";
+
+                	    } else {
+				document.getElementById("displayvideo").innerHTML = "<p class='title'>Showing erosion in No Flood situation with Flat surface</p>" +
+//"<video width='560' height='315' controls autoplay><source src='flatrainrocks.mp4' type='video/mp4'></video>";
+"<iframe width='560' height='315' src='https://www.youtube.com/embed/d9iRaP_1Wxs?autoplay=1' frameborder='0' allowfullscreen></iframe>";
+
+                	    }
+			}
+
+		}
+            }
+	}
+    };
+    request.open('GET', 'http://<<ipAddress>>:1337/data', true);
+    request.send();
+}
+</script>
+</body>
