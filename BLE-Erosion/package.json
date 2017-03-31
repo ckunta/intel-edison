@@ -1,0 +1,18 @@
+{
+  "name": "erosion-ble",
+  "description": "erosion with BLE",
+  "version": "0.0.1",
+  "main": "main.js",
+  "engines": {
+    "node": ">=4.4.3"
+  },
+  "license": "BSD-3-Clause",
+  "private": true,
+  "dependencies": {
+      "async": "latest",
+      "noble": "latest",
+      "bleno": "latest",
+      "events": "latest",
+      "util": "latest"
+  }
+}

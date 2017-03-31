@@ -1,0 +1,134 @@
+{
+  "project": {
+    "projectSettingsVersion": "3.0.0",
+    "currentBuildConfiguration": null,
+    "projectFiles": {},
+    "projectDirectories": {}
+  },
+  "editorTab": {
+    "currentEditorMode": 0
+  },
+  "iot-tab": {
+    "fileStatus": {
+      ".gitignore": {
+        "previousModTime": 1490655789149,
+        "modified": 1490655789149,
+        "seen": true,
+        "name": ".gitignore"
+      },
+      "BLE-Helloworld2.xdk": {
+        "previousModTime": 1490655789446,
+        "modified": 1490655789446,
+        "seen": true,
+        "name": "BLE-Helloworld2.xdk"
+      },
+      "BLE-Helloworld2.xdke": {
+        "previousModTime": 1490725371853,
+        "modified": 1490725371853,
+        "seen": true,
+        "name": "BLE-Helloworld2.xdke"
+      },
+      "characteristic.js": {
+        "previousModTime": 1490978497074,
+        "modified": 1490978497074,
+        "seen": true,
+        "name": "characteristic.js"
+      },
+      "icon.png": {
+        "previousModTime": 1490655789149,
+        "modified": 1490655789149,
+        "seen": true,
+        "name": "icon.png"
+      },
+      "LICENSE.md": {
+        "previousModTime": 1490655789149,
+        "modified": 1490655789149,
+        "seen": true,
+        "name": "LICENSE.md"
+      },
+      "main.js": {
+        "previousModTime": 1490908864491,
+        "modified": 1490908864491,
+        "seen": true,
+        "name": "main.js"
+      },
+      "package.json": {
+        "previousModTime": 1490971581399,
+        "modified": 1490971581399,
+        "seen": true,
+        "name": "package.json"
+      },
+      "README.md": {
+        "previousModTime": 1490736108249,
+        "modified": 1490736108249,
+        "seen": true,
+        "name": "README.md"
+      },
+      "xdk/project-info.json": {
+        "previousModTime": 1490655789350,
+        "modified": 1490655789350,
+        "seen": true,
+        "name": "xdk/project-info.json"
+      },
+      "Thumbs.db": {
+        "previousModTime": 1490714878311,
+        "modified": 1490714878311,
+        "seen": true,
+        "name": "Thumbs.db"
+      },
+      "BLE-Erosion.xdk": {
+        "previousModTime": 1490655789446,
+        "modified": 1490655789446,
+        "seen": true,
+        "name": "BLE-Erosion.xdk"
+      },
+      "BLE-Erosion.xdke": {
+        "previousModTime": 1490978480352,
+        "modified": 1490978480352,
+        "seen": true,
+        "name": "BLE-Erosion.xdke"
+      },
+      "sensor.js": {
+        "previousModTime": 1490973836647,
+        "modified": 1490973836647,
+        "seen": true,
+        "name": "sensor.js"
+      },
+      "characteristic.js~": {
+        "previousModTime": 1490918348038,
+        "modified": 1490918348038,
+        "seen": true,
+        "name": "characteristic.js~"
+      },
+      "erosion-service.js": {
+        "previousModTime": 1490974527897,
+        "modified": 1490974527897,
+        "seen": true,
+        "name": "erosion-service.js"
+      },
+      "main.js~": {
+        "previousModTime": 1490906858673,
+        "modified": 1490906858673,
+        "seen": true,
+        "name": "main.js~"
+      },
+      "sensor.js~": {
+        "previousModTime": 1490972477353,
+        "modified": 1490972477353,
+        "seen": true,
+        "name": "sensor.js~"
+      },
+      "sensor-oop.js": {
+        "previousModTime": 1490919160312,
+        "modified": 1490919160312,
+        "seen": true,
+        "name": "sensor-oop.js"
+      }
+    },
+    "boardFileStatus": {
+      "characteristic.js": {
+        "previousModTime": 1490978503792
+      }
+    }
+  }
+}
